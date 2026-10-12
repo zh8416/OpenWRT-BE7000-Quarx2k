@@ -29,3 +29,4 @@ CONFIG_SQUASHFS_XZ=y
 # CONFIG_PACKAGE_rtpengine-no-transcode is not set
 # CONFIG_PACKAGE_rtpengine-recording is not set
 # CONFIG_PACKAGE_iptables-mod-rtpengine is not set
+# CONFIG_PACKAGE_kmod-ipt-rtpengine is not set
