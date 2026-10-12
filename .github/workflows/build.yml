@@ -34,8 +34,7 @@ jobs:
 
       - name: Configure
         run: |
-          cd owrt
-          cp ../repo/config.be7000-nand .config
+          cp config.be7000-nand .config
           echo "CONFIG_DEVEL=y" >> .config
           echo "CONFIG_CCACHE=y" >> .config
           make defconfig
