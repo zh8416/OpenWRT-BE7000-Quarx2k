@@ -34,10 +34,14 @@ jobs:
 
       - name: Configure
         run: |
-          cp config.be7000-nand .config
+          cd owrt
+          cp ../repo/config.be7000-nand .config
           echo "CONFIG_DEVEL=y" >> .config
           echo "CONFIG_CCACHE=y" >> .config
           make defconfig
+          echo "packages as modules: $(grep -c '=m$' .config)"
+          echo "===== package states ====="
+          grep -E "^(CONFIG_PACKAGE_|# CONFIG_PACKAGE_)" .config | sort
 
       - name: Download sources
         run: make -j"$(nproc)" download
