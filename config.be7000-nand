@@ -24,3 +24,4 @@ CONFIG_SQUASHFS_XZ=y
 # CONFIG_TARGET_IMAGES_GZIP is not set
 # CONFIG_SIGN_EACH_PACKAGE is not set
 # CONFIG_SIGN_FIRMWARE is not set
+# CONFIG_PACKAGE_rtpengine is not set
